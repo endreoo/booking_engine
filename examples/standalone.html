@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standalone Booking Engine</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        window.BOOKING_ENGINE_CONFIG = {
+            hotelId: 'hotel123',
+            currency: 'USD',
+            theme: {
+                primary: '#2563eb',
+                secondary: '#1e40af'
+            }
+        };
+    </script>
+    <script type="module" src="/src/standalone.tsx"></script>
+</body>
+</html>

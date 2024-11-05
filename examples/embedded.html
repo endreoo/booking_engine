@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website with Embedded Booking Engine</title>
+    <script src="/dist/embed.js" defer></script>
+</head>
+<body>
+    <!-- Hotel website content -->
+    <header>
+        <h1>Welcome to Our Hotel</h1>
+    </header>
+
+    <!-- Booking engine container -->
+    <div id="booking-engine"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            window.BookingEngine.init({
+                containerId: 'booking-engine',
+                hotelId: 'hotel123',
+                currency: 'EUR',
+                theme: {
+                    primary: '#2563eb',
+                    secondary: '#1e40af'
+                }
+            });
+        });
+    </script>
+</body>
+</html>
